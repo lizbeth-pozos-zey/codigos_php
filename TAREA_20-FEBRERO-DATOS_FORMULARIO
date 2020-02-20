@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>DATOS_VALIDACIÓN</title>
+</head>
+<body>
+	<<php
+	$correo= $_POST['correo'] ;
+	$correo2= $_POST['correo2'];
+	$valor=$_POST['valor'];
+	if ($correo==$correo2) {
+		echo "LA DIRECCIÓN DE CORREO ES: ". "<strong>".$correo "</strong>"
+		if ($valor=="val1") {
+			echo " <br><strong> SI</strong> RESIVIRA CORREOS"
+		}
+		else{			echo "<strong> NO</strong> RESIVIRA CORREOS"
+		}
+	}
+	else
+	{
+		echo "NO INGRESO UNA DIRECCIÓN DE CORREO VALIDA"
+	}
+	?>
+	<br>
+	<a href="formulario.php" title="Regresar">VOLVER</a>
+</body>
+</html>
